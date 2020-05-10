@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>TravelPerk Technical Test</title>
+    <meta name="author" content="Daniel Thompson" />
+    <meta
+      name="description"
+      content="A website made from a figma design for Travelperk"
+    />
+    <meta name="keywords" content="HTML5, SASS" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <section id="logoGroupHeader">
+        <img
+          src="./assets/whiteLogo.png"
+          alt="White TravelPerk Logo"
+          id="travelPerkHeaderLogo"
+        />
+        <img
+          src="./assets/whiteLola.png"
+          alt="White Lola Logo"
+          id="lolaHeaderLogo"
+        />
+      </section>
+      <img
+        src="./assets/picture1.png"
+        alt="Three People Outside"
+        id="headerPicture"
+      />
+      <section id="textGroupHeader">
+        <h1>Lorem ipsum sit in rutrum amet</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+          sollicitudin mi vel nulla aure sollicitudin, consequat sem rutrum nec.
+          Phasellus eu neque in eros aure consectetur consequat in a ipsum cras.
+        </p>
+        <ul>
+          <li>Lorem ipsum dolor sit amet</li>
+          <li>Nulla sollicitudin consequat</li>
+          <li>Ipsum cras rutrum nec nulla adipliscing</li>
+          <li>Elit mi vel nulla sem massa</li>
+        </ul>
+      </section>
+    </header>
+    <main>
+      <article class="article-item">
+        <section class="article-image">
+          <img src="assets/picture2.png" alt="Man and woman in corridor" />
+        </section>
+        <section class="article-text-group">
+          <h3>Vivamus quis mauris id lacus viverra</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipliscing elit. Ut
+            sollicitudin mi vel nulla sollicitudin, et consequat sem
+            sollicitudin. Phasellus eu neque in eros consectetur consequat in a
+            ipsum. Cras rutrum nec massa rhoncus.
+          </p>
+          <p>
+            Aliquam in justo mauris. Vivamus et odio eget nulla rutrum hendredit
+            sed at erat. Quisque nulla orci, mollis at tempus a, imperdiet ut
+            nulla. Sed id ex dolor. Proin sed turpis sit amet velit tempor
+            placerat.
+          </p>
+        </section>
+      </article>
+      <article class="article-item">
+        <section class="article-image">
+          <img
+            src="assets/picture3.png"
+            alt="Two men and a woman walking in the street"
+          />
+        </section>
+        <section class="article-text-group">
+          <h3>Donec consectetur ante</h3>
+          <p>
+            Cras ultrices libero sit amet nunc viverra, non facilisis lectus
+            rutrum. Sed elementum faucibus augue, eu ornare tellus luctus
+            pulvinar. Nulla non tincidunt nulla. Mauris blandit placerat neque
+            eget tincidunt*.
+          </p>
+          <p>
+            Cras vitae labortis ipsum, a porta erat. Maecenas vel libero id
+            neque molestie lacinia imperdiet vel quam. Integer henfrerit libero
+            non bulpatate scelerisque.
+          </p>
+          <p class="subtext">
+            *Integer suscipit vestibulum tincidunt. Donec tempor varius urna,
+            eget sodales dolor porttitor non. Praesent sit amet ligula justo.
+            Praesent non tincidunt.
+          </p>
+        </section>
+      </article>
+      <article class="article-item">
+        <section class="article-image">
+          <img
+            src="assets/picture4.png"
+            alt="Two men and two women with luggage in the street"
+          />
+        </section>
+        <section class="article-text-group">
+          <h3>Vivamus quis mauris id lacus viverra</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipliscing elit. Ut
+            sollicitudin mi vel nulla sollicitudin, et consequat sem
+            sollicitudin. Phasellus eu neque in eros consectetur consequat in a
+            ipsum. Cras rutrum nec massa rhoncus.
+          </p>
+          <p>
+            Aliquam in justo mauris. Vivamus et odio eget nulla rutrum hendredit
+            sed at erat. Quisque nulla orci, mollis at tempus a, imperdiet ut
+            nulla. Sed id ex dolor. Proin sed turpis sit amet velit tempor
+            placerat.
+          </p>
+        </section>
+      </article>
+      <article id="imageSlideshow">
+        <section class="slides fade">
+          <img src="./assets/picture5.png" alt="Slider image 1" />
+        </section>
+        <section class="slides fade">
+          <img src="./assets/picture4.png" alt="Slider image 2" />
+        </section>
+        <section class="slides fade">
+          <img src="./assets/picture3.png" alt="Slider image 3" />
+        </section>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <section class="dots" style="text-align: center;">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </section>
+      </article>
+      <article id="companyInformation">
+        <section class="company-item" id="travelPerkInfo">
+          <img
+            class="company-logo"
+            id="logoTravelPerk"
+            src="./assets/whiteLogo.png"
+            alt="TravelPerk logo"
+          />
+          <ul>
+            <li>Duis bibendum purus vitae urna sodales</li>
+            <li>Suspendisse malesuada tortor sit amet</li>
+            <li>Mauris efficitur augue in vehicula finibus</li>
+            <li>Vivamus quis mauris id lacus viverra</li>
+          </ul>
+        </section>
+        <section class="company-item" id="lolaInfo">
+          <img
+            class="company-logo"
+            id="logoLola"
+            src="./assets/whiteLola.png"
+            alt="Lola logo"
+          />
+          <ul>
+            <li>Praesent ac est quis nisi interdum labortis</li>
+            <li>In in mauris nec lacus tincidunt lacinia</li>
+            <li>Duis cursus nulla ut urna sagittis dictum</li>
+            <li>Morbi et tortor facilisis, sollicitudin tellus</li>
+          </ul>
+        </section>
+      </article>
+      <article class="random-numbers">
+        <section class="random-number-column">
+          <h1>Math</h1>
+          <hr />
+          <p id="mathFact">Fetching Data...</p>
+        </section>
+        <section class="random-number-column">
+          <h1>Trivia</h1>
+          <hr />
+          <p id="triviaFact">Fetching Data...</p>
+        </section>
+        <section class="random-number-column">
+          <h1>Date</h1>
+          <hr />
+          <p id="dateFact">Fetching Data...</p>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <article class="company-information">
+        <h1>Lorem ipsum sit in rutrum amet</h1>
+        <section class="footer-logos">
+          <img
+            src="./assets/blueLogo.png"
+            alt="White TravelPerk Logo"
+            id="travelPerkFooterLogo"
+          />
+          <img
+            src="./assets/purpleLola.png"
+            alt="White Lola Logo"
+            id="lolaFooterLogo"
+          />
+        </section>
+      </article>
+      <article class="footer-nav">
+        <section>
+          <h3>Consectetur</h3>
+          <ul>
+            <li>Lorem ipsum</li>
+            <li>Dolor sit amet</li>
+            <li>Consectetur elit</li>
+            <li>Vivamus</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Adipliscing</h3>
+          <ul>
+            <li>Efficitur mi</li>
+            <li>Et cursus</li>
+            <li>Semper sit amet</li>
+            <li>Nulla et nunc</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Semper</h3>
+          <ul>
+            <li>Pellentesque sodales</li>
+            <li>Fermentum purus</li>
+            <li>Quis eros</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Magna</h3>
+          <ul>
+            <li>Volutpat at suscipit</li>
+            <li>Magna blandit</li>
+            <li>Velit rutrum</li>
+            <li>Donec sed</li>
+          </ul>
+        </section>
+      </article>
+
+      <article class="footer-mobile-nav">
+        <section>
+          <button class="collapsible">Consectetur</button>
+          <ul>
+            <li>Lorem ipsum</li>
+            <li>Dolor sit amet</li>
+            <li>Consectetur elit</li>
+            <li>Vivamus</li>
+          </ul>
+        </section>
+
+        <section>
+          <button class="collapsible">Adipliscing</button>
+          <ul>
+            <li>Efficitur mi</li>
+            <li>Et cursus</li>
+            <li>Semper sit amet</li>
+            <li>Nulla et nunc</li>
+          </ul>
+        </section>
+
+        <section>
+          <button class="collapsible">Semper</button>
+          <ul>
+            <li>Pellentesque sodales</li>
+            <li>Fermentum purus</li>
+            <li>Quis eros</li>
+          </ul>
+        </section>
+
+        <section>
+          <button class="collapsible">Magna</button>
+          <ul>
+            <li>Volutpat at suscipit</li>
+            <li>Magna blandit</li>
+            <li>Velit rutrum</li>
+            <li>Donec sed</li>
+          </ul>
+        </section>
+      </article>
+      <article>
+        <small
+          >Copyright &copy; 2020 TravelExpertzz. All rights reserved.</small
+        >
+      </article>
+    </footer>
+    <script src="js/slider.js"></script>
+    <script src="js/collapse.js"></script>
+    <script src="js/randomData.js"></script>
+  </body>
+</html>

@@ -1,0 +1,594 @@
+@charset "UTF-8";
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+}
+
+header {
+  background-color: #19234e;
+  color: white;
+  position: relative;
+  height: 100%;
+}
+
+#headerPicture {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  object-fit: cover;
+}
+
+#logoGroupHeader {
+  color: white;
+  width: 50%;
+  margin-left: 110px;
+  padding-top: 70px;
+}
+
+#textGroupHeader {
+  color: white;
+  width: 50%;
+  margin-top: 70px;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 32px;
+  margin-left: 110px;
+  padding-bottom: 140px;
+}
+#textGroupHeader h1 {
+  font-size: 74px;
+  font-weight: 100;
+  line-height: 100px;
+  width: 70%;
+}
+#textGroupHeader p {
+  width: 70%;
+  margin-bottom: 40px;
+}
+#textGroupHeader ul {
+  width: 70%;
+  margin-left: -40px;
+}
+#textGroupHeader ul li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+#textGroupHeader ul li:before {
+  content: "★ ";
+  color: #abd8ff;
+  margin-right: 20px;
+}
+
+#travelPerkHeaderLogo {
+  margin-right: 30px;
+  padding-right: 30px;
+  border-right: 1px solid white;
+}
+
+article {
+  margin: 140px 100px 140px 100px;
+  position: relative;
+  height: 60vh;
+}
+
+.article-item {
+  display: flex;
+}
+.article-item .article-text-group {
+  width: 50%;
+  margin: auto;
+  line-height: 32px;
+  font-size: 18px;
+}
+.article-item .article-text-group h3 {
+  color: #281e46;
+  font-size: 26px;
+  width: 60%;
+}
+.article-item .article-text-group p {
+  width: 60%;
+}
+.article-item .article-text-group .subtext {
+  font-size: 12px;
+  line-height: 26px;
+}
+.article-item .article-image {
+  width: 50%;
+  margin: auto;
+}
+.article-item .article-image img {
+  width: 100%;
+}
+.article-item:nth-of-type(odd) .article-text-group {
+  padding-left: 140px;
+}
+.article-item:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+
+/*
+ Source: https://www.w3schools.com/howto/howto_js_slideshow.asp
+*/
+#imageSlideshow {
+  margin: 0;
+  height: 80vh;
+  /* Fading animation */
+}
+#imageSlideshow .slides {
+  display: none;
+}
+#imageSlideshow .slides img {
+  width: 100%;
+  max-height: 80vh;
+  object-fit: cover;
+}
+#imageSlideshow .prev,
+#imageSlideshow .next {
+  cursor: pointer;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: 45%;
+  text-align: center;
+  margin-top: -22px;
+  color: #003097;
+  background-color: white;
+  border-radius: 100px;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+  line-height: 50px;
+  margin: 0 2%;
+}
+#imageSlideshow .prev.prev:hover, #imageSlideshow .prev.next:hover,
+#imageSlideshow .next.prev:hover,
+#imageSlideshow .next.next:hover {
+  background-color: rgba(240, 240, 240, 0.8);
+}
+#imageSlideshow .next {
+  right: 0;
+}
+#imageSlideshow .dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+#imageSlideshow .dots {
+  position: relative;
+  top: -60px;
+}
+#imageSlideshow .active,
+#imageSlideshow .dot:hover {
+  background-color: #abd8ff;
+}
+#imageSlideshow .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#companyInformation {
+  display: flex;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  position: relative;
+  background-color: black;
+}
+#companyInformation .company-item {
+  width: 50%;
+}
+#companyInformation .company-item img {
+  margin: 100px 100px 50px 100px;
+}
+#companyInformation .company-item ul {
+  margin: 50px 100px 100px 80px;
+  color: white;
+  line-height: 70px;
+  font-size: 28px;
+}
+#companyInformation .company-item #logoTravelPerk {
+  width: 25%;
+}
+#companyInformation .company-item #logoLola {
+  width: 12.5%;
+}
+#companyInformation #travelPerkInfo {
+  background-color: #003097;
+  height: 70vh;
+  float: left;
+}
+#companyInformation #lolaInfo {
+  background-color: #19234e;
+  height: 70vh;
+  float: right;
+}
+
+footer {
+  height: 100%;
+  position: relative;
+  background-color: #e6e6e6;
+  margin-bottom: 0px;
+}
+footer article {
+  margin: 0;
+  height: 100%;
+  padding: 50px 100px;
+}
+footer article h1 {
+  font-size: 44px;
+  font-weight: 200;
+}
+footer article #travelPerkFooterLogo {
+  width: 30%;
+  margin-right: 20px;
+  border-right: 1px solid black;
+  padding-right: 20px;
+}
+footer article #lolaFooterLogo {
+  width: 15%;
+}
+footer .company-information {
+  position: relative;
+  width: 30%;
+}
+footer .footer-mobile-nav {
+  display: none;
+}
+footer .footer-nav {
+  width: 60%;
+  top: 0;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  right: 0;
+  padding: 0;
+}
+footer .footer-nav section {
+  width: 25%;
+  padding-top: 6%;
+}
+footer .footer-nav section ul {
+  margin-left: -40px;
+}
+footer .footer-nav section ul li {
+  list-style: none;
+  letter-spacing: 0.6px;
+  line-height: 40px;
+}
+footer small {
+  position: relative;
+  top: -40px;
+}
+
+.random-numbers {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+.random-numbers .random-number-column {
+  width: 33%;
+  text-align: center;
+}
+.random-numbers .random-number-column:nth-of-type(odd) {
+  background-color: white;
+}
+.random-numbers .random-number-column:nth-of-type(even) {
+  background-color: gray;
+}
+.random-numbers .random-number-column p {
+  padding-bottom: 20%;
+}
+
+@media only screen and (max-width: 800px) {
+  header {
+    width: 100%;
+  }
+
+  #headerPicture {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    object-fit: cover;
+  }
+
+  #logoGroupHeader {
+    color: white;
+    width: 100%;
+    margin-left: 0;
+    padding: 3% 0;
+  }
+
+  #textGroupHeader {
+    color: white;
+    width: 100%;
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    margin-left: 0;
+    padding-bottom: 5%;
+  }
+  #textGroupHeader h1 {
+    font-size: 32px;
+    font-weight: 100;
+    line-height: 30px;
+    width: 80%;
+    padding-left: 10%;
+  }
+  #textGroupHeader p {
+    width: 80%;
+    margin-bottom: 0;
+    padding-left: 10%;
+  }
+  #textGroupHeader ul {
+    width: 80%;
+    margin-left: 0;
+    padding-left: 10%;
+  }
+  #textGroupHeader ul li {
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  #textGroupHeader ul li:before {
+    content: "★ ";
+    color: #abd8ff;
+    margin-right: 20px;
+  }
+
+  #travelPerkHeaderLogo {
+    width: 40%;
+    margin-right: 30px;
+    padding-right: 30px;
+    padding-left: 10%;
+    border-right: 1px solid white;
+  }
+
+  #lolaHeaderLogo {
+    width: 20%;
+  }
+
+  article {
+    margin: 0;
+  }
+
+  .article-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+  }
+  .article-item .article-text-group {
+    width: 100%;
+    line-height: 18px;
+    font-size: 14px;
+  }
+  .article-item .article-text-group h3 {
+    color: #281e46;
+    font-size: 20px;
+    width: 80%;
+    padding-left: 10%;
+  }
+  .article-item .article-text-group p {
+    width: 80%;
+    padding-left: 10%;
+  }
+  .article-item .article-text-group .subtext {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .article-item .article-image {
+    width: 100%;
+    margin: 40px 40px 20px 0px;
+  }
+  .article-item .article-image img {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+  }
+  .article-item:nth-of-type(odd) .article-text-group {
+    padding-left: 0;
+  }
+  .article-item:nth-of-type(even) {
+    flex-direction: column;
+  }
+
+  #imageSlideshow {
+    width: 100%;
+    bottom: -30px;
+    height: 100%;
+  }
+  #imageSlideshow .slides img {
+    height: auto;
+    max-height: auto;
+  }
+  #imageSlideshow .dots {
+    top: -30px;
+  }
+  #imageSlideshow .prev,
+#imageSlideshow .next {
+    top: 35%;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+  }
+
+  #companyInformation {
+    flex-direction: column;
+    position: relative;
+  }
+  #companyInformation #travelPerkInfo {
+    height: 100%;
+  }
+  #companyInformation #lolaInfo {
+    height: 100%;
+  }
+  #companyInformation .company-item {
+    width: 100%;
+  }
+  #companyInformation .company-item {
+    width: 100%;
+  }
+  #companyInformation .company-item img {
+    margin: 12%;
+  }
+  #companyInformation .company-item ul {
+    margin: 8%;
+    color: white;
+    line-height: 22px;
+    font-size: 18px;
+  }
+  #companyInformation .company-item ul li {
+    padding-bottom: 10%;
+  }
+  #companyInformation .company-item #logoTravelPerk {
+    width: 50%;
+  }
+  #companyInformation .company-item #logoLola {
+    width: 30%;
+  }
+
+  footer {
+    height: 100%;
+    top: 0px;
+    margin-top: -20px;
+    position: relative;
+    background-color: #e6e6e6;
+    /*
+      Source: https://www.w3schools.com/howto/howto_js_collapsible.asp 
+    */
+  }
+  footer article {
+    margin: 0;
+    height: 100%;
+    padding: 0;
+  }
+  footer article h1 {
+    font-size: 30px;
+    font-weight: 200;
+    padding-left: 10%;
+  }
+  footer article .footer-logos {
+    padding-left: 10%;
+  }
+  footer article #travelPerkFooterLogo {
+    width: 45%;
+    margin-right: 5%;
+    border-right: 1px solid black;
+    padding-right: 5%;
+  }
+  footer article #lolaFooterLogo {
+    width: 30%;
+    max-height: 60px;
+  }
+  footer .company-information {
+    position: relative;
+    width: 100%;
+    padding-top: 5%;
+  }
+  footer .footer-nav {
+    display: none;
+  }
+  footer .footer-mobile-nav {
+    display: block;
+    padding-top: 10%;
+    margin-bottom: 5%;
+  }
+  footer .footer-mobile-nav section {
+    border-bottom: 1px #abd8ff solid;
+  }
+  footer .footer-mobile-nav section:first-child {
+    border-top: 1px #abd8ff solid;
+  }
+  footer .footer-mobile-nav .collapsible {
+    background-color: #e6e6e6;
+    border-width: 0;
+    border-style: 0;
+    border-color: 0;
+    border-image: 0;
+    color: black;
+    cursor: pointer;
+    padding: 3%;
+    width: 100%;
+    text-align: left;
+    padding-left: 10%;
+    outline: none;
+    font-size: 18px;
+  }
+  footer .footer-mobile-nav .collapsible:after {
+    content: "⬇️";
+    color: black;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  footer .footer-mobile-nav .active:after {
+    content: "⬆️";
+  }
+  footer .footer-mobile-nav ul {
+    margin: 0;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  footer .footer-mobile-nav ul li {
+    list-style: none;
+    padding-left: 6%;
+    padding-bottom: 2%;
+  }
+  footer small {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-left: 10%;
+    font-size: 10px;
+  }
+
+  .random-numbers {
+    display: flex;
+    flex-direction: column;
+  }
+  .random-numbers .random-number-column {
+    width: 100%;
+  }
+}
+/* {
+  border: 1px solid red;
+}*/
+
+/*# sourceMappingURL=styles.css.map */
